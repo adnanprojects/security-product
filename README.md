@@ -1,16 +1,50 @@
-# React + Vite
+# SecureShield - Security Products Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive React web application for managing security products with role-based access control.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Multi-role System**: User, Product Admin, and Admin roles
+- **Role-based Dashboards**: Customized interfaces for each role
+- **Product Management**: Add, view, and manage security products
+- **Query System**: User query submission and handling
+- **User Management**: Admin panel for user management
+- **Responsive Design**: Mobile-first responsive design
+- **Modern UI**: Built with Tailwind CSS and Lucide icons
 
-## React Compiler
+## 👥 Roles & Permissions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Public User (No Login Required)
+- Access to homepage, services, about, and contact pages
+- User registration and login
 
-## Expanding the ESLint configuration
+### Regular User
+- Personal dashboard with security overview
+- Product browsing and management
+- Query submission and tracking
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Product Admin
+- Product management (add, edit, view details)
+- Query handling and resolution
+- Product-specific analytics
+
+### Admin
+- System-wide user management
+- Overall system monitoring
+- Administrative controls
+
+## 🛠 Tech Stack
+
+- **Frontend**: React 18 + Vite
+- **Routing**: React Router DOM
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **State Management**: React Context API
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd security-products-app
