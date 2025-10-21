@@ -1,6 +1,7 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Section from "../components/layout/Section";
 import First from '../components/pages/First';
 import About from '../components/pages/About';
 import Contact from '../components/pages/Contact';
@@ -19,6 +20,7 @@ export default () => {
                     <Route path="/register" element={<Register />} />
                     <Route path="/login" element={<Login />} />
                 </Routes>
+                <Section />
                 <Footer />
             </Router>
         </>
