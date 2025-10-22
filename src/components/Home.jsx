@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
-import Section from "../components/layout/Section";
-import First from '../components/pages/First';
-import About from '../components/pages/About';
-import Contact from '../components/pages/Contact';
-import Register from '../components/pages/Register';
-import Login from '../components/pages/Login';
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Section from "./Section";
+import First from './First';
+import About from './About';
+import Contact from './Contact';
+import Register from './Register';
+import Login from './Login';
 
 export default () => {
     return(
@@ -20,8 +20,8 @@ export default () => {
                     <Route path="/register" element={<Register />} />
                     <Route path="/login" element={<Login />} />
                 </Routes>
-                <Section />
-                <Footer />
+                {/* <Section /> */}
+                {/* <Footer /> */}
             </Router>
         </>
     );
