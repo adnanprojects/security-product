@@ -7,6 +7,7 @@ import About from './About';
 import Contact from './Contact';
 import Register from './Register';
 import Login from './Login';
+import About_us_page from './About_us_page';
 
 export default () => {
     return(
@@ -16,6 +17,7 @@ export default () => {
                 <Routes>
                     <Route path="/" element={<First />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/about_us" element={<About_us_page />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/login" element={<Login />} />
