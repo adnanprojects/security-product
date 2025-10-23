@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user-container {
+    display: flex;
+    height: 80vh;
+    /* margin-top: 20px; */
+}
+
+.side-items {
+    width: 250px;
+    background-color: rgb(230, 230, 230);
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+
+.side-item{
+    margin-bottom: 20px;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* .side-items{
+    list-style-type: none;
+    padding: 0;
+} */
+
+.user-main {
+    /* border: 1px solid black; */
+    flex: 1;
+    padding: 20px;
+    /* background-color: rgb(240, 240, 230); */
+}
+
+.user-dash {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.greet{
+    /* background-color: #f0f0f0; */
+    background-color: #ddd;
+    /* background-color: rgb(139, 139, 139); */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.heading{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;;
+}
+
+td, th, thead {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(139, 139, 139);
+  color: white;
+}
+
+.query-btn{
+    float: right;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+} 
+
+/* Modal CSS */
+#modal-btn {
+  font-size: 1.6rem;
+  /* color: white; */
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 7px;
+  padding: 15px 25px;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+#modal-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  width: 250px;
+  height: 100px;
+  font-size: 1.5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  animation-name: animateModal;
+  animation-duration: 0.4s;
+}
+
+@keyframes animateModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 0.8;
+  }
+}
+.text {
+  padding: 5px;
+  color: black;
+}
+
+.close {
+  font-size: 2rem;
+}
+
+.close:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* modal CSS end */

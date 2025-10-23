@@ -39,7 +39,8 @@
 /* Container */
 .contact_container {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: auto;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -121,6 +122,16 @@
   background-color: #2b3f7a;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(50, 74, 142, 0.25);
+}
+
+#login{
+  width: 100%;
+  max-width: 400px;
+}
+
+#register{
+  width: 100%;
+  max-width: 400px;
 }
 
 /* Responsive Design */

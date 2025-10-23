@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Card({ title, description, image }) {
 
     const handleClick = ({title, description}) => {
-        <Link to={`/details/${title}`}></Link>
+        // <Link to={`/details/${title}`}></Link>
     }
 
     return (

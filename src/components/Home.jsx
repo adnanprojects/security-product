@@ -8,6 +8,9 @@ import Contact from './Contact';
 import Register from './Register';
 import Login from './Login';
 import About_us_page from './About_us_page';
+import User from './User';
+import Admin from './Admin';
+import ProductAdmin from './ProductAdmin'; 
 
 export default () => {
     return(
@@ -21,6 +24,9 @@ export default () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/user/*" element={<User />} />
+                    <Route path="/admin/*" element={<Admin />} />
+                    <Route path="/product_admin/*" element={<ProductAdmin />} />
                 </Routes>
                 {/* <Section /> */}
                 {/* <Footer /> */}
