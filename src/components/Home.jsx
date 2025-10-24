@@ -28,8 +28,7 @@ export default () => {
                     <Route path="/admin/*" element={<Admin />} />
                     <Route path="/product_admin/*" element={<ProductAdmin />} />
                 </Routes>
-                {/* <Section /> */}
-                {/* <Footer /> */}
+                <Footer />
             </Router>
         </>
     );

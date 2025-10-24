@@ -1,85 +1,89 @@
-// src/components/Footer.js
 import React from 'react';
-import '../index.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { 
+    faFacebookF, 
+    faTwitter, 
+    faLinkedinIn, 
+    faInstagram 
+} from '@fortawesome/free-brands-svg-icons';
+import './Footer.css';
 
 const Footer = () => {
-  return (
-    <footer>
-      <div>
-        {/* Main Footer Content */}
-        <div>
-          {/* Column 1: About Us */}
-          <div>
-            <h3>About C-DAC</h3>
-            <ul className="space-y-2">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Mission & Vision</a></li>
-              <li><a href="#">Leadership</a></li>
-              <li><a href="#">Achievements</a></li>
-            </ul>
-          </div>
+    return (
+        <footer className="footer">
+            <div className="footer-container">
+                <div className="footer-content">
+                    {/* Company Info */}
+                    <div className="footer-section">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><Link to="/about">About Company</Link></li>
+                            <li><Link to="/about_us">Why Choose Us</Link></li>
+                            <li><Link to="/">Our Products</Link></li>
+                            <li><Link to="/contact">Contact Us</Link></li>
+                        </ul>
+                    </div>
 
-          {/* Column 2: Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li><a href="#">Training Programs</a></li>
-              <li><a href="#">Research & Development</a></li>
-              <li><a href="#">Consultancy</a></li>
-              <li><a href="#">e-Governance</a></li>
-            </ul>
-          </div>
+                    {/* Products & Services */}
+                    <div className="footer-section">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="#">Security Solutions</a></li>
+                            <li><a href="#">Network Protection</a></li>
+                            <li><a href="#">Data Security</a></li>
+                            <li><a href="#">Cloud Security</a></li>
+                        </ul>
+                    </div>
 
-          {/* Column 3: Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Tenders</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </div>
+                    {/* Support */}
+                    <div className="footer-section">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><Link to="/user/queries">Help Center</Link></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">System Status</a></li>
+                            <li><a href="#">Report Issue</a></li>
+                        </ul>
+                    </div>
 
-          {/* Column 4: Contact Us */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p className="mb-2">C-DAC, Innovation Park,</p>
-            <p className="mb-2">Pune, Maharashtra, India</p>
-            <p className="mb-2">Email: <a href="mailto:info@cdac.in">info@cdac.in</a></p>
-            <p className="mb-4">Phone: +91-20-12345678</p>
-            {/* Social Media Icons */}
-            <div className="flex space-x-4">
-              <a href="#">
-                <FontAwesomeIcon icon={faFacebookF} />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon icon={faYoutube} />
-              </a>
+                    {/* Contact Info */}
+                    <div className="footer-section">
+                        <h3>Contact Us</h3>
+                        <div className="contact-info">
+                            <p>123 Security Street</p>
+                            <p>Tech Valley, CA 94043</p>
+                            <p>Email: info@securetech.com</p>
+                            <p>Phone: (555) 123-4567</p>
+                        </div>
+                        <div className="social-icons">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FontAwesomeIcon icon={faFacebookF} />
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FontAwesomeIcon icon={faTwitter} />
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FontAwesomeIcon icon={faLinkedinIn} />
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="footer-bottom">
+                    <p>&copy; {new Date().getFullYear()} SecureTech Solutions. All rights reserved.</p>
+                    <div className="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Settings</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p>&copy; {new Date().getFullYear()} C-DAC. All Rights Reserved.</p>
-          <div className="mt-2">
-            <a href="#" >Privacy Policy</a> |
-            <a href="#" >Terms of Use</a> |
-            <a href="#" >Sitemap</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
+        </footer>
+    );
 };
 
 export default Footer;
