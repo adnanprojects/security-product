@@ -21,13 +21,13 @@ const Navbar = () => {
         </div>
         {/* Links on the right */}
         <div className="navbar-links">
-          
+
           <ul className='navlink'>
             {!isLoggedIn ? (
               <>
-            <li><Link className='link' to="/">Home</Link></li>
-            <li><Link className='link' to="/about">About</Link></li>
-            <li><Link className='link' to="/contact">Contact</Link></li>
+                <li><Link className='link' to="/">Home</Link></li>
+                <li><Link className='link' to="/about">About</Link></li>
+                <li><Link className='link' to="/contact">Contact</Link></li>
                 <li><Link className='link' to="/register">Register</Link></li>
                 <li><Link className='link' to="/login">Login</Link></li>
               </>
@@ -35,7 +35,6 @@ const Navbar = () => {
               <li><button className='link logout-btn' onClick={handleLogout}>Logout</button></li>
             )}
           </ul>
-              
         </div>
       </div>
     </nav>
