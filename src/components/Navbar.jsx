@@ -23,11 +23,11 @@ const Navbar = () => {
         <div className="navbar-links">
           
           <ul className='navlink'>
+            {!isLoggedIn ? (
+              <>
             <li><Link className='link' to="/">Home</Link></li>
             <li><Link className='link' to="/about">About</Link></li>
             <li><Link className='link' to="/contact">Contact</Link></li>
-            {!isLoggedIn ? (
-              <>
                 <li><Link className='link' to="/register">Register</Link></li>
                 <li><Link className='link' to="/login">Login</Link></li>
               </>
